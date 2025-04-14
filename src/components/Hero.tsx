@@ -39,17 +39,26 @@ export function Hero() {
             </p>
             
             <div className="flex gap-4 animate-fade-in animate-delay-300">
-              <Button onClick={scrollToProjects} className="group">
+
+
+              <Button onClick={scrollToProjects} className="z-0 group">
                 View my work
                 <ArrowDown className="ml-2 h-4 w-4 transition-transform group-hover:translate-y-1" />
               </Button>
               
               <Button variant="outline" asChild>
-                <a href="https://github.com/Markus-bit" target="_blank" rel="noopener noreferrer">
+                <a 
+                href="https://github.com/Markus-bit" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="z-0"
+                >
                   <Github className="mr-2 h-4 w-4" />
                   GitHub
                 </a>
               </Button>
+
+
             </div>
             
             <div className="flex items-center gap-4 pt-4 animate-fade-in animate-delay-400">

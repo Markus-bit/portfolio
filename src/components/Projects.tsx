@@ -165,7 +165,7 @@ export function Projects() {
                         <span className="text-sm">{repo.stargazers_count}</span>
                       </div>
                     </div>
-                    <CardDescription className="line-clamp-2 h-12">
+                    <CardDescription className="line-clamp-2 h-10">
                       {repo.description || "No description provided"}
                     </CardDescription>
                   </CardHeader>
