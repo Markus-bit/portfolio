@@ -32,7 +32,7 @@ export function SkillsSection() {
         { name: "CSS3", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" },
         { name: "React", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" },
         { name: "Tailwind CSS", icon: "https://www.svgrepo.com/show/354431/tailwindcss-icon.svg" },
-        { name: "Bootstrap", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" },
+        { name: "Bootstrap", icon: "https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg" },
       ],
     },
     {
@@ -44,35 +44,11 @@ export function SkillsSection() {
       ],
     },
     {
-      title: "Software",
-      skills: [
-        { name: "Figma", icon: "https://www.vectorlogo.zone/logos/figma/figma-icon.svg" },
-        { name: "Photoshop", icon: "https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg" },
-        { name: "Postman", icon: "https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" },
-        { name: "Adobe XD", icon: "https://upload.wikimedia.org/wikipedia/commons/c/c2/Adobe_XD_CC_icon.svg" },
-      ],
-    },
-    {
-      title: "Testing",
-      skills: [
-        { name: "Selenium", icon: "https://raw.githubusercontent.com/detain/svg-logos/780f25886640cef088af994181646db2f6b1a3f8/svg/selenium-logo.svg" },
-        { name: "Playwright", icon: "https://ray.run/playwright-brand-assets/playwright-logo.svg" },
-      ],
-    },
-    {
-      title: "Game Engines",
-      skills: [
-        { name: "Unity", icon: "https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg" },
-        { name: "Unreal Engine", icon: "https://raw.githubusercontent.com/kenangundogan/fontisto/036b7eca71aab1bef8e6a0518f7329f13ed62f6b/icons/svg/brand/unreal-engine.svg" },
-      ],
-    },
-    {
       title: "Other",
       skills: [
-        { name: "Arduino", icon: "https://cdn.worldvectorlogo.com/logos/arduino-1.svg" },
-        { name: "Docker", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" },
-        { name: "Git", icon: "https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" },
-        { name: "IFTTT", icon: "https://www.vectorlogo.zone/logos/ifttt/ifttt-ar21.svg" },
+        { name: "Figma", icon: "https://www.vectorlogo.zone/logos/figma/figma-icon.svg" },
+        { name: "Postman", icon: "https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" },
+        { name: "Playwright", icon: "https://ray.run/playwright-brand-assets/playwright-logo.svg" },
       ],
     },
   ];

@@ -218,7 +218,7 @@ export function Projects() {
         <div className="flex justify-center mt-12">
           <Button asChild>
             <a 
-              href="https://github.com/Markus-bit" 
+              href="https://github.com/Markus-bit?tab=repositories" 
               target="_blank" 
               rel="noopener noreferrer"
               className="flex items-center gap-2"
