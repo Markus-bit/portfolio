@@ -158,10 +158,10 @@ export function Contact() {
                     <div>
                       <h4 className="font-medium">Email</h4>
                       <a 
-                        href="mailto:your-email@example.com" 
+                        href="mailto:markussvorsk@gmail.com"
                         className="text-sm text-muted-foreground hover:text-primary transition-colors"
                       >
-                        your-email@example.com
+                        markussvorsk@gmail.com
                       </a>
                     </div>
                   </div>
@@ -190,7 +190,7 @@ export function Contact() {
                     <div>
                       <h4 className="font-medium">LinkedIn</h4>
                       <a 
-                        href="#" 
+                        href="https://www.linkedin.com/in/markus-johnsen-256656235/" 
                         target="_blank" 
                         rel="noopener noreferrer"
                         className="text-sm text-muted-foreground hover:text-primary transition-colors"
