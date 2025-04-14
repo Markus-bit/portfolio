@@ -22,13 +22,14 @@ export function About() {
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground">
-                I'm Markus André Johnsen, a software developer from Oslo, Norway. I'm passionate about building 
-                clean, efficient, and user-friendly applications. My journey in technology started with a curiosity 
-                about how websites work, and has evolved into a deep fascination with software development.
+              I'm a software developer based in Oslo, passionate about building things that are both functional and 
+              enjoyable to use — whether it's a mobile app, a web platform, or something in between. I enjoy working 
+              with modern technologies like Jetpack Compose, React, and Firebase, and I'm always looking for ways to 
+              create useful, beautiful, and user-friendly products.
               </p>
               <p className="text-muted-foreground mt-4">
-                When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, 
-                or enjoying outdoor activities in the beautiful Norwegian landscape.
+              When I'm not coding, I'm probably brainstorming project ideas (often with a social or AI twist), 
+              contributing to something creative, or enjoying the outdoors in Norway.
               </p>
             </CardContent>
           </Card>
@@ -43,12 +44,13 @@ export function About() {
                 <div>
                   <h3 className="font-medium">University of Oslo</h3>
                   <p className="text-sm text-muted-foreground">Computer Science</p>
-                  <p className="text-sm text-muted-foreground">2020 - Present</p>
+                  <p className="text-sm text-muted-foreground">2023 - Present</p>
                 </div>
                 <p className="text-muted-foreground">
-                  Currently pursuing my degree in Computer Science with a focus on web development and 
-                  distributed systems. I've completed courses in algorithms, data structures, database systems, 
-                  and software engineering.
+                I'm currently pursuing a degree in Computer Science, with a focus on web technologies,
+                 mobile development, and distributed systems. My coursework has covered everything from algorithms and 
+                databases to software engineering and cloud architecture — and I love applying that knowledge in 
+                real-world projects.
                 </p>
               </div>
             </CardContent>
@@ -66,9 +68,9 @@ export function About() {
                   <p className="text-sm text-muted-foreground">Freelance & Personal</p>
                 </div>
                 <p className="text-muted-foreground">
-                  I've worked on a variety of projects, from frontend development using React and TypeScript 
-                  to backend systems with Node.js and Express. I focus on creating responsive, accessible, and 
-                  modern applications that solve real-world problems.
+                I've worked on a range of projects, from mobile apps built with Jetpack Compose to full-stack web apps using React, 
+                TypeScript, Node.js, and Firebase. I enjoy creating responsive, accessible, and modern applications that solve real problems — 
+                especially when there's a fun design or tech challenge involved.
                 </p>
               </div>
             </CardContent>

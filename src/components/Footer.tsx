@@ -34,7 +34,7 @@ export function Footer() {
               <Github className="h-5 w-5" />
             </a>
             <a 
-              href="#" 
+              href="https://www.linkedin.com/in/markus-johnsen-256656235/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors"
@@ -43,7 +43,7 @@ export function Footer() {
               <Linkedin className="h-5 w-5" />
             </a>
             <a 
-              href="mailto:your-email@example.com" 
+              href="mailto:markussvorsk@gmail.com" 
               className="text-muted-foreground hover:text-primary transition-colors"
               aria-label="Email"
             >
@@ -64,9 +64,7 @@ export function Footer() {
         
         <div className="border-t border-border/50 mt-6 pt-6 text-center">
           <p className="text-sm text-muted-foreground flex items-center justify-center gap-1">
-            <span>© {currentYear} Markus André Johnsen. Built with</span>
-            <Heart className="h-3 w-3 text-red-500" />
-            <span>using React & TypeScript</span>
+            <span>© {currentYear} Markus André Johnsen</span>
           </p>
         </div>
       </div>
