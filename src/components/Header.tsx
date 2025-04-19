@@ -33,11 +33,11 @@ export function Header() {
   const toggleMenu = () => setIsOpen(!isOpen);
   const closeMenu = () => setIsOpen(false);
 
-  const navigateTo = (id: string) => {
+  const navigateTo = (id: string, offset) => {
     closeMenu();
     const element = document.getElementById(id);
     if (element) {
-      const headerOffset = 80;
+      const headerOffset = offset || 0; // Default offset is 0 if not provided
       const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
       const offsetPosition = elementPosition - headerOffset;
 
@@ -63,12 +63,12 @@ export function Header() {
   
             <div className="hidden md:block">
               <nav className="ml-10 flex items-center space-x-8">
-                <a onClick={() => navigateTo("home")} className="text-foreground hover:text-primary transition-colors cursor-pointer">Home</a>
-                <a onClick={() => navigateTo("about")} className="text-foreground hover:text-primary transition-colors cursor-pointer">About</a>
-                <a onClick={() => navigateTo("projects")} className="text-foreground hover:text-primary transition-colors cursor-pointer">Projects</a>
-                <a onClick={() => navigateTo("blog")} className="text-foreground hover:text-primary transition-colors cursor-pointer">Blog</a>
-                <a onClick={() => navigateTo("contact")} className="text-foreground hover:text-primary transition-colors cursor-pointer">Contact</a>
-                <ThemeToggle />
+                <a onClick={() => navigateTo("home", 20)} className="text-foreground hover:text-primary transition-colors cursor-pointer">Home</a>
+                <a onClick={() => navigateTo("about", 20)} className="text-foreground hover:text-primary transition-colors cursor-pointer">About</a>
+                <a onClick={() => navigateTo("projects",-30)} className="text-foreground hover:text-primary transition-colors cursor-pointer">Projects</a>
+                <a onClick={() => navigateTo("blog", 20)} className="text-foreground hover:text-primary transition-colors cursor-pointer">Blog</a>
+                <a onClick={() => navigateTo("contact", 20)} className="text-foreground hover:text-primary transition-colors cursor-pointer">Contact</a>
+            
               </nav>
             </div>
   
@@ -107,11 +107,11 @@ export function Header() {
   
           {/* Menyinnhold – nå sentrert nøyaktig midt på skjermen */}
           <nav className="flex flex-col items-center space-y-8 text-xl">
-            <a onClick={() => navigateTo("home")} className="text-foreground hover:text-primary transition-colors cursor-pointer">Home</a>
-            <a onClick={() => navigateTo("about")} className="text-foreground hover:text-primary transition-colors cursor-pointer">About</a>
-            <a onClick={() => navigateTo("projects")} className="text-foreground hover:text-primary transition-colors cursor-pointer">Projects</a>
-            <a onClick={() => navigateTo("blog")} className="text-foreground hover:text-primary transition-colors cursor-pointer">Blog</a>
-            <a onClick={() => navigateTo("contact")} className="text-foreground hover:text-primary transition-colors cursor-pointer">Contact</a>
+            <a onClick={() => navigateTo("home",20)} className="text-foreground hover:text-primary transition-colors cursor-pointer">Home</a>
+            <a onClick={() => navigateTo("about",-40)} className="text-foreground hover:text-primary transition-colors cursor-pointer">About</a>
+            <a onClick={() => navigateTo("projects",-20)} className="text-foreground hover:text-primary transition-colors cursor-pointer">Projects</a>
+            <a onClick={() => navigateTo("blog",-20)} className="text-foreground hover:text-primary transition-colors cursor-pointer">Blog</a>
+            <a onClick={() => navigateTo("contact",-20)} className="text-foreground hover:text-primary transition-colors cursor-pointer">Contact</a>
           </nav>
         </div>
       </div>

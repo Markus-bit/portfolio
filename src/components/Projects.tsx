@@ -201,7 +201,7 @@ export function Projects() {
                           href={repo.homepage} 
                           target="_blank" 
                           rel="noopener noreferrer"
-                          className="flex items-center gap-1 group-hover:text-primary transition-colors"
+                          className="flex items-center gap-1 group-hover:text-white transition-colors"
                         >
                           <span>Live Demo</span>
                           <ArrowUpRight className="h-4 w-4" />

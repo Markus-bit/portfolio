@@ -6,7 +6,21 @@ export function Hero() {
   const scrollToProjects = () => {
     const projectsSection = document.getElementById("projects");
     if (projectsSection) {
-      const headerOffset = 80;
+      const headerOffset = -30;
+      const elementPosition = projectsSection.getBoundingClientRect().top + window.pageYOffset;
+      const offsetPosition = elementPosition - headerOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+    }
+  };
+
+  const scrollToContact = () => {
+    const projectsSection = document.getElementById("contact");
+    if (projectsSection) {
+      const headerOffset = 20;
       const elementPosition = projectsSection.getBoundingClientRect().top + window.pageYOffset;
       const offsetPosition = elementPosition - headerOffset;
 
@@ -79,7 +93,7 @@ export function Hero() {
                 <Linkedin className="h-5 w-5" />
               </a>
               <a 
-                href="mailto:markussvorsk@gmail.com" 
+                onClick={scrollToContact}
                 className="text-muted-foreground hover:text-primary transition-colors"
               >
                 <Mail className="h-5 w-5" />
