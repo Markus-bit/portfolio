@@ -4,44 +4,46 @@ export default function ThankYou() {
   useEffect(() => {
     const timeout = setTimeout(() => {
       window.location.href = "/";
-    }, 7000); // auto-redirect after 7 seconds
-
+    }, 70000);
     return () => clearTimeout(timeout);
   }, []);
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center px-4 bg-gradient-to-br from-background via-background to-background/80 text-foreground relative overflow-hidden">
-      {/* Confetti (🎉 emoji animation) */}
-      <div className="absolute animate-float text-[120px] opacity-10 select-none top-[-20px] left-[10%]">
-        🎉
-      </div>
-      <div className="absolute animate-float-delay text-[80px] opacity-10 select-none bottom-[10%] right-[10%]">
-        ✨
-      </div>
+    <div className="min-h-screen relative flex items-center justify-center px-4 bg-[#050a13] text-white overflow-hidden">
 
-      {/* Main content */}
-      <div className="z-10 max-w-xl text-center space-y-6">
-        <h1 className="text-5xl sm:text-6xl font-bold tracking-tight animate-fade-in">
-          Thank You 🙌
+        <div className="absolute z-0 top-2/4 right-1/4 w-64 h-64 bg-blue-600/10 rounded-full filter blur-3xl animate-spin-slow"></div>
+        <div className="absolute z-0 bottom-2/4 left-1/4 w-80 h-80 bg-blue-600/10 rounded-full filter blur-3xl animate-spin-slow"></div>
+
+      <div className="relative z-10 w-full max-w-xl bg-[#101322]/80 backdrop-blur-md border border-white/10 rounded-2xl p-10 text-center shadow-xl animate-fade-in space-y-6">
+        <div className="relative w-16 h-16 mx-auto mb-6">
+            {/* Glowing background circle */}
+            <div className="absolute inset-0 rounded-full bg-primary/30 blur-xl animate-ping-slow" />
+            
+            {/* Icon on top */}
+            <img
+                src="public/favicon/favicon.svg"
+                alt="Logo"
+                className="relative z-10 w-16 h-16 rounded-full shadow-md"
+            />
+        </div>
+
+        <h1 className="text-4xl sm:text-5xl font-semibold tracking-tight">
+          Thank You
         </h1>
-        <p className="text-lg text-muted-foreground animate-fade-in delay-200">
-          Your message was sent successfully. I’ll get back to you as soon as possible!
+        <p className="text-lg text-gray-300">
+          Your message has been sent. I’ll get back to you as soon as possible.
         </p>
-
-        <p className="text-sm text-muted-foreground animate-fade-in delay-300">
-          You’ll be redirected to the homepage shortly...
+        <p className="text-sm text-gray-500">
+          Redirecting to the homepage shortly...
         </p>
 
         <a
           href="/"
-          className="inline-block mt-6 px-6 py-3 bg-primary text-background rounded-xl font-semibold transition hover:bg-primary/90 animate-fade-in delay-500"
+          className="inline-block mt-4 px-5 py-3 bg-blue-600 text-white rounded-lg font-medium transition hover:bg-blue-700"
         >
           Go to Homepage Now
         </a>
       </div>
-
-      {/* Floating M laptop logo or circle (optional) */}
-      <div className="absolute bottom-[-40px] blur-2xl opacity-20 w-[300px] h-[300px] bg-primary rounded-full z-0 animate-pulse" />
     </div>
   );
 }
