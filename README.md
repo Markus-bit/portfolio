@@ -1,73 +1,85 @@
-# Welcome to your Lovable project
+# 💼 Personal Portfolio – Markus André Johnsen
 
-## Project info
+This is the source code for my personal portfolio website, hosted at [markusjohnsen.no](https://markusjohnsen.no).  
+The site is built with modern technologies to showcase my work, skills, and background as a developer.
 
-**URL**: https://lovable.dev/projects/6714cc3d-ecff-48ae-9394-98261d3d6aa7
+---
 
-## How can I edit this code?
+## 🌐 Live Demo
 
-There are several ways of editing your application.
+**Visit here:** [markusjohnsen.no](https://markusjohnsen.no)
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/6714cc3d-ecff-48ae-9394-98261d3d6aa7) and start prompting.
+## 🧰 Tech Stack
 
-Changes made via Lovable will be committed automatically to this repo.
+- [React](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Vite](https://vitejs.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [shadcn/ui](https://ui.shadcn.com/)
+- [PostCSS](https://postcss.org/)
+- [Vercel](https://vercel.com/) (for deployment)
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 🚀 Getting Started
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+To run this project locally, follow these steps:
 
-Follow these steps:
+### 1. Clone the repository
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+```bash
+git clone https://github.com/Markus-bit/portfolio.git
+cd portfolio
+```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### 2. Install dependencies
 
-# Step 3: Install the necessary dependencies.
-npm i
+```bash
+npm install
+```
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+### 3. Start the development server
+
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+This will launch the site on `http://localhost:5173` by default (Vite's default port). If that port is unavailable, Vite will choose another available port.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+---
 
-**Use GitHub Codespaces**
+## 📁 Project Structure
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+```
+portfolio/
+├── public/              # Static assets
+├── src/                 # Main application source
+│   ├── components/      # UI components
+│   ├── pages/           # Page components
+│   └── styles/          # Styling
+├── index.html           # HTML entry point
+├── package.json         # Project metadata and scripts
+├── tailwind.config.ts   # Tailwind CSS config
+├── vite.config.ts       # Vite config
+└── vercel.json          # Deployment config (Vercel)
+```
 
-## What technologies are used for this project?
+---
 
-This project is built with:
+## ⚙️ Deployment
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+The project is configured for easy deployment via [Vercel](https://vercel.com/). Simply connect your GitHub repository and push to the `main` branch to trigger automatic deployment.
 
-## How can I deploy this project?
+---
 
-Simply open [Lovable](https://lovable.dev/projects/6714cc3d-ecff-48ae-9394-98261d3d6aa7) and click on Share -> Publish.
+## 📄 License
 
-## Can I connect a custom domain to my Lovable project?
+This project is licensed under the [MIT License](LICENSE).
 
-Yes, you can!
+---
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## 🙋‍♂️ Contact
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+If you have questions, suggestions, or want to collaborate, feel free to open an issue or reach out via [markusjohnsen.no](https://markusjohnsen.no).
