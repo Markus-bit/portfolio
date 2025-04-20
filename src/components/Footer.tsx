@@ -57,6 +57,7 @@ export function Footer() {
             </a>
             <a 
               onClick={scrollToContact} 
+              role="button"
               className="text-muted-foreground hover:text-primary transition-colors"
               aria-label="Email"
             >
