@@ -24,7 +24,7 @@ export function Contact() {
                 >
                   {/* Optional FormSubmit settings */}
                   <input type="hidden" name="_captcha" value="false" />
-                  <input type="hidden" name="_next" value="https://www.markusjohnsen.no/ThankYou" />
+                  <input type="hidden" name="_next" value="https://www.markusjohnsen.no/thank-you" />
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div className="space-y-2">
