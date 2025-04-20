@@ -73,7 +73,6 @@ export function Header() {
             </div>
   
             <div className="md:hidden flex items-center">
-              <ThemeToggle />
               <Button
                 variant="ghost"
                 size="icon"

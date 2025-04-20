@@ -9,7 +9,6 @@ export function Blog() {
 
   useEffect(() => {
     fetchMediumPosts().then(posts => {
-      console.log("Fetched posts:", posts);
       setBlogPosts(posts);
     });
   }, []);
