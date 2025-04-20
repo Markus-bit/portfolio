@@ -21,7 +21,7 @@ export default function ThankYou() {
             
             {/* Icon on top */}
             <img
-                src="/public/favicon/favicon.svg"
+                src="/favicon/favicon.svg"
                 alt="Logo"
                 className="relative z-10 w-16 h-16 rounded-full shadow-md"
             />
