@@ -4,7 +4,7 @@ export default function ThankYou() {
   useEffect(() => {
     const timeout = setTimeout(() => {
       window.location.href = "/";
-    }, 70000);
+    }, 7000);
     return () => clearTimeout(timeout);
   }, []);
 
