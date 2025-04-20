@@ -10,6 +10,19 @@ export function Footer() {
     });
   };
 
+  const scrollToContact = () => {
+    const projectsSection = document.getElementById("contact");
+    if (projectsSection) {
+      const headerOffset = 20;
+      const elementPosition = projectsSection.getBoundingClientRect().top + window.pageYOffset;
+      const offsetPosition = elementPosition - headerOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+    }
+  };
   const currentYear = new Date().getFullYear();
 
   return (
@@ -43,7 +56,7 @@ export function Footer() {
               <Linkedin className="h-5 w-5" />
             </a>
             <a 
-              href="mailto:markussvorsk@gmail.com" 
+              onClick={scrollToContact} 
               className="text-muted-foreground hover:text-primary transition-colors"
               aria-label="Email"
             >
