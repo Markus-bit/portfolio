@@ -16,7 +16,7 @@ export function SkillsSection() {
     {
       title: "Programming Languages",
       skills: [
-        { name: "C", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg", link: "https://www.programiz.com/c-programming" },
+        { name: "C", icon: "https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg", link: "https://www.programiz.com/c-programming" },
         { name: "C#", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg", link: "https://learn.microsoft.com/en-us/dotnet/csharp/" },
         { name: "Java", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg", link: "https://dev.java/" },
         { name: "JavaScript", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg", link: "https://www.javascript.com/" },
