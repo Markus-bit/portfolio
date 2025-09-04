@@ -141,7 +141,7 @@ export function Hero() {
                   </div>
                   <div className="flex text-sm font-mono pl-6">
                     <span className="text-foreground mr-2">education:</span>
-                    <span className="text-accent">'University of Oslo'</span>
+                    <span className="text-accent">'B.Sc. Computer Science'</span>
                   </div>
                   <div className="flex text-sm font-mono">
                     <span className="text-foreground">{`}`}</span>
