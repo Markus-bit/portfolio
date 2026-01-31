@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -5,6 +6,39 @@ import { Github, Linkedin, Mail, MessageSquare, Send } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
 export function Contact() {
+  const [hasSubmitted, setHasSubmitted] = useState(false);
+  const [submitCount, setSubmitCount] = useState(0);
+  const dailyLimit = 2;
+  const storageCountKey = "contactSubmitCount";
+  const storageDateKey = "contactSubmitDate";
+
+  useEffect(() => {
+    const today = new Date().toISOString().slice(0, 10);
+    const storedDate = localStorage.getItem(storageDateKey);
+    const storedCount = Number(localStorage.getItem(storageCountKey) || "0");
+
+    if (storedDate !== today) {
+      localStorage.setItem(storageDateKey, today);
+      localStorage.setItem(storageCountKey, "0");
+      setSubmitCount(0);
+      return;
+    }
+
+    setSubmitCount(Number.isFinite(storedCount) ? storedCount : 0);
+  }, []);
+
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    if (hasSubmitted || submitCount >= dailyLimit) {
+      event.preventDefault();
+      return;
+    }
+
+    const nextCount = submitCount + 1;
+    localStorage.setItem(storageCountKey, String(nextCount));
+    setSubmitCount(nextCount);
+    setHasSubmitted(true);
+  };
+
   return (
     <section id="contact" className="py-20">
       <div className="section-container">
@@ -21,6 +55,7 @@ export function Contact() {
                   action="https://formsubmit.co/markussvorsk@gmail.com"
                   method="POST"
                   className="space-y-6"
+                  onSubmit={handleSubmit}
                 >
                   {/* Optional FormSubmit settings */}
                   <input type="hidden" name="_captcha" value="false" />
@@ -78,10 +113,20 @@ export function Contact() {
                     />
                   </div>
 
-                  <Button type="submit" className="w-full sm:w-auto">
+                  <Button
+                    type="submit"
+                    className="w-full sm:w-auto"
+                    disabled={hasSubmitted || submitCount >= dailyLimit}
+                  >
                     <div className="flex items-center gap-2">
                       <Send className="h-4 w-4" />
-                      <span>Send Message</span>
+                      <span>
+                        {submitCount >= dailyLimit
+                          ? "Rate limit reached"
+                          : hasSubmitted
+                            ? "Sending..."
+                            : "Send Message"}
+                      </span>
                     </div>
                   </Button>
                 </form>
